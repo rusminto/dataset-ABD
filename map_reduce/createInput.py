@@ -1,9 +1,9 @@
-with open('bmi.csv') as file:
+with open('./../Data BMI.csv') as file:
     counter = 1;
     for line in file:
         sistol = 0;
         try:
-            sistol = round(int(line.rstrip().split(';')[6]), -1)
+            sistol = round(int(line.rstrip().split(',')[6]), -1)
         except:
             sistol = 0;
 
